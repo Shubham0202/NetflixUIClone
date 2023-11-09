@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.911);
+}
+
+.main {
+  position: relative;
+  height: 70dvh;
+  border: 1px solid;
+}
+.main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../src/images/Home/squid_game.jpg") no-repeat;
+  background-size: cover;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section1 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo-container {
+  width: 200px;
+  height: 80px;
+}
+.logo-container .logo {
+  width: 100%;
+  height: 100%;
+}
+
+.ul-list {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  list-style: none;
+}
+.ul-list a {
+  display: block;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  transition: color 200ms ease;
+}
+.ul-list a:hover {
+  color: #e50914;
+}
+
+.section2 {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 80px;
+}
+.section2 .sec2-links {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  transition: color 200ms ease;
+}
+.section2 .sec2-links:hover {
+  color: #e50914;
+}
+.section2 .search {
+  font-size: 25px;
+  padding: 0.2em;
+  cursor: pointer;
+}
+.section2 .bell {
+  font-size: 25px;
+  position: relative;
+  padding: 0.2em;
+  padding-right: 0.3em;
+  cursor: pointer;
+}
+.section2 .bell::after {
+  content: "1";
+  font-size: 15px;
+  color: white;
+  display: block;
+  width: 20px;
+  height: 17px;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #e50914;
+  border-radius: 100vmax;
+}
+
+.series-info {
+  margin-top: 50px;
+  width: 400px;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+.series-title {
+  font-size: 45px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.s-buttons {
+  margin-top: 1em;
+}
+.s-buttons .series-btns {
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  background: #e50914;
+  color: white;
+}
+.s-buttons .mylist-btn {
+  margin-left: 0.5em;
+  background: rgb(3, 192, 3);
+}
+
+.s-storyline {
+  margin-top: 1em;
+  color: white;
+}
+
+.other-section {
+  padding: 0 1em;
+}
+
+.other-title {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 1em;
+}
+
+.other-movies {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.other-movies .other-img {
+  width: 300px;
+  height: 180px;
+}
+.other-movies .other-img .o-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 4px;
+}/*# sourceMappingURL=home1.css.map */
