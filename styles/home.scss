@@ -32,7 +32,7 @@ body {
   width: 100%;
   height: 100%;
   background: url("../src/images/page1/netflixHomeBackground.jpg") no-repeat;
-  background-position: center;
+  background-position: 100%;
   filter: brightness(0.4);
   z-index: -1;
 }
@@ -132,10 +132,7 @@ body {
   width: 100%;
   // outline: 2px solid lime;
 }
-.set-max-size {
-  // border: 2px solid;
-  // max-width: 570px; // add this in media query
-}
+
 .tv-container {
   max-width: 100%;
   width: 550px;
@@ -216,6 +213,8 @@ body {
   }
 }
 
+// containers reverse style access using js
+
 @media screen and (max-width: 1020px) {
   .diff-font {
     font-size: 40px !important;
@@ -248,9 +247,12 @@ body {
   .diff-font{
     font-size: 30px!important;
   }
-
-  .common-grid-center{
-    display: grid;
+  //display flex property is not required because common-grid-center is already display flex;
+  .wrap-reverse{
+    flex-wrap: wrap-reverse!important;
+  }
+  .wrap{
+    flex-wrap: wrap!important;
   }
     .common-grid-center1,.common-grid-center{
       & .sub-title{
@@ -284,6 +286,7 @@ body {
       height: 50px;
       object-fit: contain;
     }
+   
   }
   
 
