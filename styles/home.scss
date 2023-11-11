@@ -80,6 +80,10 @@ body {
 .sub-container {
   height: 100%;
 }
+@mixin cursor()
+{
+  cursor: pointer;
+}
 @mixin gridCenter() {
   // display: grid;
   // grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
@@ -214,6 +218,60 @@ body {
   }
 }
 
+// FAQ
+$faq-font-size: 18px;
+.faq-container{
+  padding: 1em 2em;
+  color: $primary-white-clr;
+}
+.faq-heading{
+  text-align: center;
+  margin-bottom: 1em;
+}
+.faq-que{
+  .que{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include cursor();
+    padding: 1em;
+    background: #221f1f;
+    border-radius: 3px;
+    font-size: $faq-font-size;
+  }
+}
+.faq-ans{
+  height: 0;
+  overflow: hidden;
+  background: #343333;
+  margin-bottom: 1em;
+  transition: height 200ms ease;
+  & .ans1{
+    margin-bottom: .5em;
+  }
+}
+.active-faq-ans{
+  padding: 1em;
+  height: auto;
+}
+.plus-icon{
+  transition: rotate 100ms ease;
+}
+.active-plus-icon{
+  rotate: 45deg;
+}
+.faq-section2{
+  padding-top: 1em;
+}
+.sub-title-2{
+  text-align: center;
+  font-size: 18px;
+  margin: 1em;
+}
+footer{
+  color: $primary-white-clr;
+  padding: 1em;
+}
 // containers reverse style access using js
 
 @media screen and (max-width: 1020px) {
