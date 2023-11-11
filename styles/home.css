@@ -364,4 +364,19 @@ footer {
   .container-1 {
     height: 70dvh;
   }
+  .faq-container {
+    padding: 1em;
+  }
+  .faq-que .que {
+    cursor: default;
+  }
+  .lower-btn-wrap {
+    flex-wrap: wrap;
+  }
+  .lower-inp {
+    display: block;
+    margin-bottom: 0.5em;
+    width: 280px !important;
+    max-width: 90vw !important;
+  }
 }/*# sourceMappingURL=home.css.map */

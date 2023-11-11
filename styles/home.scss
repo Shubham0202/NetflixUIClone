@@ -350,6 +350,10 @@ footer{
   
 
 @media screen and (max-width: 392px){
+  @mixin cursor()
+  {
+    cursor: default;
+  }
   .add-bg::before{
     background-position: 10%;
   }
@@ -378,6 +382,23 @@ footer{
   }
   .container-1{
     height: 70dvh;
+  }
+  .faq-container{
+    padding: 1em;
+  }  
+  .faq-que{
+    .que{
+      @include cursor();
+    }
+  }
+  .lower-btn-wrap{
+    flex-wrap: wrap;
+  }
+   .lower-inp{
+    display: block;
+    margin-bottom: .5em;
+    width: 280px!important;
+    max-width: 90vw!important;  
   }
 } 
 
