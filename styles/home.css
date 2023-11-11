@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background: #130e0c;
+  background: #171414;
 }
 
 .add-bg {
@@ -240,6 +240,8 @@ body {
   background: #343333;
   margin-bottom: 1em;
   transition: height 200ms ease;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 .faq-ans .ans1 {
   margin-bottom: 0.5em;
